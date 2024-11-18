@@ -9,8 +9,6 @@ namespace EphemeralCoins
 
 		public const string bundleName = "ephemeralcoins";
 
-		public const string assetBundleFolder = "assetbundles";
-
 		public static ArtifactDef NewMoonArtifact;
 
         internal static string[] lunarInteractables = {
@@ -25,7 +23,7 @@ namespace EphemeralCoins
 		{
 			get
 			{
-				return System.IO.Path.Combine(System.IO.Path.GetDirectoryName(EphemeralCoins.PInfo.Location), assetBundleFolder, bundleName);
+				return System.IO.Path.Combine(System.IO.Path.GetDirectoryName(EphemeralCoins.PInfo.Location), bundleName);
 			}
 		}
 
