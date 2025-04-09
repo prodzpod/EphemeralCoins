@@ -36,6 +36,8 @@ Provides settings to control various aspects relating to Lunar Coins, including 
 
 ## Changelog
 
+2.3.6 - fixed for sots 2.0
+
 2.3.5 - fixed assetbundle location
 
 2.3.4 - ![:p_hi:](https://raw.githubusercontent.com/prodzpod/StageAesthetic/refs/heads/main/p_hi.png) (works for sots)
