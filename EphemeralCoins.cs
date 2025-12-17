@@ -159,7 +159,7 @@ namespace EphemeralCoins
                     }
                     return (bool)networkUser2 && networkUser2.lunarCoins >= context.cost;
                 },
-                payCost = delegate (CostTypeDef costTypeDef, CostTypeDef.PayCostContext context)
+                payCost = delegate (CostTypeDef.PayCostContext context, CostTypeDef.PayCostResults results)
                 {
                     NetworkUser networkUser = Util.LookUpBodyNetworkUser(context.activator.gameObject);
                     if ((bool)networkUser)

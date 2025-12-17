@@ -31,10 +31,10 @@
 	<PackageReference Include="BepInEx.BaseLib" Version="5.4.19" />
     <PackageReference Include="RiskOfRain2.GameLibs" Version="*-*" />
 	<PackageReference Include="UnityEngine.Modules" Version="2021.3.33" />
-	<PackageReference Include="MMHOOK.RoR2" Version="2024.9.5">
+	<PackageReference Include="MMHOOK.RoR2" Version="2025.11.19">
 		<NoWarn>NU1701</NoWarn>
 	</PackageReference>
-	<PackageReference Include="R2API" Version="4.1.8" />
+	<PackageReference Include="R2API" Version="5.0.5" />
   </ItemGroup>
 
   <ItemGroup>

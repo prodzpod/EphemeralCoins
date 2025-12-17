@@ -36,6 +36,8 @@ Provides settings to control various aspects relating to Lunar Coins, including 
 
 ## Changelog
 
+2.3.7 - fixed for ac
+
 2.3.6 - fixed for sots 2.0
 
 2.3.5 - fixed assetbundle location

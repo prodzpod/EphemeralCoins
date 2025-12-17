@@ -3,6 +3,7 @@ using MonoMod.Cil;
 using R2API.Utils;
 using RoR2;
 using System;
+using System.Linq;
 using System.Reflection;
 using UnityEngine.Networking;
 
@@ -30,7 +31,7 @@ namespace EphemeralCoins
 
             //Coin drop multiplier
             BindingFlags allFlags = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance | BindingFlags.DeclaredOnly;
-            var initDelegate = typeof(PlayerCharacterMasterController).GetNestedTypes(allFlags)[0].GetMethodCached(name: "<Init>b__83_0");
+            var initDelegate = typeof(PlayerCharacterMasterController).GetNestedTypes(allFlags)[0].GetRuntimeMethods().First(x => x.Name.StartsWith("<Init>b__"));
             MonoMod.RuntimeDetour.HookGen.HookEndpointManager.Modify(initDelegate, (Action<ILContext>)CoinDropHook);
 
             //Blue Orb on stage start chance reduction
