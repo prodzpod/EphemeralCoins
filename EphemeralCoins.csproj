@@ -27,9 +27,13 @@
   </ItemGroup>
 
   <ItemGroup>
-	<PackageReference Include="BepInEx.Core" Version="5.4.19" />
-	<PackageReference Include="BepInEx.BaseLib" Version="5.4.19" />
+	<PackageReference Include="BepInEx.Core" Version="5.4.21" />
+	<PackageReference Include="BepInEx.BaseLib" Version="5.4.20" />
+	<PackageReference Include="R2API.ContentManagement" Version="1.0.8" />
+	<PackageReference Include="R2API.Core" Version="5.1.5" />
+	<PackageReference Include="R2API.Networking" Version="1.0.3" />
     <PackageReference Include="RiskOfRain2.GameLibs" Version="*-*" />
+    <PackageReference Include="Rune580.Mods.RiskOfRain2.RiskOfOptions" Version="2.8.2" />
 	<PackageReference Include="UnityEngine.Modules" Version="2021.3.33" />
 	<PackageReference Include="MMHOOK.RoR2" Version="2025.11.19">
 		<NoWarn>NU1701</NoWarn>
@@ -40,9 +44,6 @@
   <ItemGroup>
     <Reference Include="ProperSave">
       <HintPath>..\libs\ProperSave-nstrip.dll</HintPath>
-    </Reference>
-    <Reference Include="RiskOfOptions">
-      <HintPath>..\libs\RiskOfOptions-nstrip.dll</HintPath>
     </Reference>
   </ItemGroup>
 
